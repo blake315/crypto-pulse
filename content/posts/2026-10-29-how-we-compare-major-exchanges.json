@@ -1,0 +1,25 @@
+{
+  "id": 1000000002,
+  "slug": "how-we-compare-major-exchanges-fees-liquidity-and-kyc",
+  "title": "How We Compare Major Exchanges: Fees, Liquidity and KYC Flow",
+  "summary": "A plain-language framework for comparing venues — maker/taker fees, withdrawal costs, liquidity depth and onboarding friction.",
+  "category": "exchange-arena",
+  "source": "CP Desk",
+  "sentiment": "Neutral",
+  "tags": ["exchanges", "fees", "kyc"],
+  "date": "2026-10-29T14:05:00Z",
+  "readMinutes": 5,
+  "isPromoted": false,
+  "body": [
+    { "p": "Most 'best exchange' lists are affiliate copy. We keep it boring: a fixed set of criteria, applied the same way to every venue we review." },
+    { "h": "The four things we look at first" },
+    { "list": [
+      "**Maker/taker fees** — the headline number hides volume tiers and token-burn discounts.",
+      "**Liquidity depth** — tighter books mean less slippage for market orders.",
+      "**Withdrawal costs & limits** — the fee you forget until it's too late.",
+      "**KYC/onboarding** — how many steps before your first trade, and what's asked."
+    ] },
+    { "h": "A note on affiliate links" },
+    { "p": "When a review mentions a specific venue, the page is clearly labelled as a partner or sponsored slot. Editorial content stays independent of any referral relationship." }
+  ]
+}

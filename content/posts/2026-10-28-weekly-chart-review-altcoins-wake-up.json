@@ -1,0 +1,24 @@
+{
+  "id": 1000000004,
+  "slug": "weekly-chart-review-altcoins-wake-up-after-a-quiet-month",
+  "title": "Weekly Chart Review: Altcoins Wake Up After a Quiet Month",
+  "summary": "SOL and a handful of majors are printing higher highs while BTC dominance takes a breather — a first look at rotation.",
+  "category": "market-analysis",
+  "source": "CP Markets",
+  "sentiment": "Bullish",
+  "tags": ["altcoins", "sol", "dominance"],
+  "date": "2026-10-28T10:15:00Z",
+  "readMinutes": 7,
+  "isPromoted": false,
+  "body": [
+    { "p": "For four weeks, BTC absorbed liquidity and most alts drifted. That changed this week: several top-20 majors closed above their 50-day EMAs on rising volume." },
+    { "h": "The signals we're tracking" },
+    { "list": [
+      "BTC dominance down from recent local highs — a classic rotation tell.",
+      "SOL leading the bounce, with spot volume confirming rather than vanishing.",
+      "Total altcoin market cap reclaiming its Q3 range mid." ]
+    },
+    { "h": "What would invalidate the case" },
+    { "p": "If BTC dominance resumes its uptrend and the risk curve flattens — i.e. majors stop outperforming small caps — the rotation call fails and we go back to waiting." }
+  ]
+}

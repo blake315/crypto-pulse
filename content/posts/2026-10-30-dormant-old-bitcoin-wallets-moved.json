@@ -1,0 +1,20 @@
+{
+  "id": 1000000003,
+  "slug": "dormant-old-bitcoin-wallets-moved-and-perp-funding-holds-negative",
+  "title": "Dormant Old Wallets Stir as Perp Funding Holds Negative",
+  "summary": "On-chain sleuths flagged large movements from a decade-old cluster — while derivatives markets price in more downside.",
+  "category": "insights",
+  "source": "Key Data",
+  "sentiment": "Bearish",
+  "tags": ["on-chain", "derivatives", "btc"],
+  "date": "2026-10-30T06:30:00Z",
+  "readMinutes": 3,
+  "isPromoted": false,
+  "body": [
+    { "p": "Two developments crossed the desk overnight: a cluster of 2015-era wallets moved for the first time in years, and perpetual funding rates on major venues flipped negative." },
+    { "quote": "Funding negative means shorts are paying longs — a sign the crowded trade is bearish, which squeezes the other way fast." },
+    { "h": "Why the wallet move matters" },
+    { "p": "Movement is not distribution. Coins often shift between custodial setups or consolidating addresses. On-chain data alone can't tell intent — but when combined with negative funding, traders read it as supply-overhang risk." },
+    { "note": "Briefs are time-sensitive. Check our ticker strip for the latest snapshot figures." }
+  ]
+}

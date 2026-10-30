@@ -1,0 +1,20 @@
+{
+  "id": 1000000005,
+  "slug": "exchange-landing-pages-a-sponsorship-opposite-of-vetting",
+  "title": "Exchange Landing Pages: Promo Slots Are Not Vetting",
+  "summary": "What our partner slots are — and aren't. Why a banner here never equals an endorsement of a venue's custody or solvency.",
+  "category": "exchange-arena",
+  "source": "CP Desk",
+  "sentiment": "Neutral",
+  "tags": ["advertising", "disclosure"],
+  "date": "2026-10-27T09:00:00Z",
+  "readMinutes": 4,
+  "isPromoted": false,
+  "body": [
+    { "p": "This hub hosts partner slots. That's the whole function: a labelled, paid placement pointing at an exchange landing page." },
+    { "h": "What promotion is not" },
+    { "p": "A sponsored slot is not a security audit, a solvency guarantee or a custody recommendation. Exchanges fail. Counterparty risk is real. Promotion simply means someone paid for the placement." },
+    { "h": "How to read our editorial reviews" },
+    { "p": "Editorial exchange reviews in this section apply the same criteria regardless of who advertises. When a venue reviewed in an article is also an advertiser, the article says so explicitly." }
+  ]
+}

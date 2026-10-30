@@ -1,0 +1,28 @@
+{
+  "id": 1000000001,
+  "slug": "bitcoin-halving-2028-countdown-what-history-suggests",
+  "title": "Bitcoin Halving 2028 Countdown: What History Suggests for the Next Cycle",
+  "summary": "With the 2028 halving on the horizon, we revisit how previous supply shocks played out — and what's different this time.",
+  "category": "market-analysis",
+  "source": "CP Research",
+  "sentiment": "Cautious",
+  "tags": ["btc", "halving", "cycles"],
+  "date": "2026-10-30T08:00:00Z",
+  "readMinutes": 6,
+  "isPromoted": true,
+  "body": [
+    { "p": "Every four years, Bitcoin's block subsidy is cut in half. The 2028 halving is still roughly 18 months away by current block-time estimates, but positioning tends to begin well in advance." },
+    { "h": "What the last three halvings showed" },
+    { "p": "The 2012, 2016, 2020 and 2024 halvings were each followed by new all-time highs — but the path and the lag were never identical. In 2024, price consolidated longer than many expected before the late-year breakout." },
+    { "list": [
+      "2012: steepest post-halving rally, thin market depth.",
+      "2016: slower grind, altcoin rotation mid-cycle.",
+      "2020: macro tailwinds amplified the move.",
+      "2024: ETF flows changed the supply-demand structure."
+    ] },
+    { "quote": "History rhymes, it doesn't repeat. Position for the mechanism, not the calendar." },
+    { "h": "What's different now" },
+    { "p": "For the first time, a mature ETF complex competes with exchanges for supply, and mining economics are dominated by public companies with treasury strategies. That changes both floor and ceiling behaviour." },
+    { "note": "This is market analysis, not financial advice. Nothing here is a recommendation to buy or sell." }
+  ]
+}

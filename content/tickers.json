@@ -1,0 +1,19 @@
+{
+  "updated": "2026-10-30T00:00:00Z",
+  "coins": [
+    { "symbol": "BTC", "name": "Bitcoin", "price": 78250.78, "change": 1.97 },
+    { "symbol": "ETH", "name": "Ethereum", "price": 3512.44, "change": 2.61 },
+    { "symbol": "BNB", "name": "BNB", "price": 642.91, "change": -0.84 },
+    { "symbol": "SOL", "name": "Solana", "price": 197.51, "change": 5.32 },
+    { "symbol": "XRP", "name": "XRP", "price": 2.18, "change": -1.12 },
+    { "symbol": "DOGE", "name": "Dogecoin", "price": 0.318, "change": 3.45 },
+    { "symbol": "ADA", "name": "Cardano", "price": 0.912, "change": 1.21 },
+    { "symbol": "AVAX", "name": "Avalanche", "price": 34.84, "change": -2.16 }
+  ],
+  "stats": [
+    { "label": "Global Market Cap", "value": "$2.61T", "change": 1.84 },
+    { "label": "24h Volume", "value": "$128.4B", "change": 6.32 },
+    { "label": "BTC Dominance", "value": "54.6%", "change": 0.12 },
+    { "label": "Fear & Greed", "value": "38 · Fear", "change": -4 }
+  ]
+}

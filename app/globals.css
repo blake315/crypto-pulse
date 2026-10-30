@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(56, 189, 248, 0.06), transparent 60%),
+    radial-gradient(1000px 560px at -10% 0%, rgba(247, 147, 26, 0.05), transparent 55%),
+    #05080f;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b2740;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3b60;
+}
+
+::selection {
+  background: rgba(247, 147, 26, 0.28);
+  color: #fff;
+}
+
+/* Link base */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Line clamp fallback (Tailwind also ships line-clamp since 3.3) */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Small pulse dot used in the header brand mark */
+.glow-dot {
+  box-shadow: 0 0 10px rgba(247, 147, 26, 0.55);
+}
