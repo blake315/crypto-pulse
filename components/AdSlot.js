@@ -6,6 +6,9 @@ import { partners } from '../lib/partners';
  * it shows a clearly-labelled placeholder so the page keeps its layout and
  * nothing pretends to be a live promo. Fill `lib/partners.js` to go live.
  *
+ * When an entry has an `image`, the creative is rendered full-width with a
+ * small "Sponsored" disclosure. Otherwise the compact text card is shown.
+ *
  * @param {string} position  key of `AdSlots` ("leaderboard" | "rectangle" | "native" | "mobile")
  */
 export default function AdSlot({ position, className = '' }) {
@@ -32,6 +35,31 @@ export default function AdSlot({ position, className = '' }) {
             Reserve this slot via <code className="text-brand/80">lib/partners.js</code>
           </div>
         </div>
+      </aside>
+    );
+  }
+
+  if (item.image) {
+    return (
+      <aside id={slot.id} className={className} aria-label={`Sponsored: ${item.name}`}>
+        <a
+          href={item.href}
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          className="group block overflow-hidden rounded-xl border border-line bg-ink-850 transition-colors hover:border-brand/50"
+        >
+          <figure className="relative m-0">
+            <img
+              src={item.image}
+              alt={item.alt || `${item.name} advertisement`}
+              className="block h-auto w-full"
+              loading="lazy"
+            />
+            <figcaption className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-ink-950/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-brand backdrop-blur">
+              Sponsored
+            </figcaption>
+          </figure>
+        </a>
       </aside>
     );
   }

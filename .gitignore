@@ -23,3 +23,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# raw brand-material source (deployed copies live in public/ads)
+content/olymptrade/

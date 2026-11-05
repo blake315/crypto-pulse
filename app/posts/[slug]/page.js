@@ -4,6 +4,7 @@ import PostBody from '@/components/PostBody';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import PostCard, { CategoryBadge, Sentiment } from '@/components/PostCard';
 import AdSlot from '@/components/AdSlot';
+import PartnerVideo from '@/components/PartnerVideo';
 import { getAllPosts, getPostBySlug, getRelatedPosts, formatDate } from '@/lib/posts';
 import site from '@/config/site';
 
@@ -36,7 +37,7 @@ export default async function PostPage({ params }) {
   const meta = site.categories.find((c) => c.slug === post.category);
 
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto max-w-5xl">
       <Breadcrumbs
         items={[
           { label: meta?.label || post.category, href: `/category/${post.category}` },
@@ -44,6 +45,9 @@ export default async function PostPage({ params }) {
         ]}
       />
 
+      {/* Article + promo video rail */}
+      <div className="grid items-start gap-6 lg:grid-cols-[minmax(0,1fr)_300px]">
+        <div>
       <article className="rounded-2xl border border-line bg-ink-850/72 p-6 shadow-card sm:p-10">
         <header>
           <div className="flex flex-wrap items-center gap-2">
@@ -91,6 +95,13 @@ export default async function PostPage({ params }) {
           </footer>
         )}
       </article>
+
+        {/* Promo video beside the article */}
+        <div className="lg:sticky lg:top-24">
+          <PartnerVideo />
+        </div>
+        </div>
+      </div>
 
       <div className="my-8">
         <AdSlot position="leaderboard" />

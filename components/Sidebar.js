@@ -13,6 +13,9 @@ export default function Sidebar() {
       {/* Sponsored box — rectangle */}
       <AdSlot position="rectangle" />
 
+      {/* Slim mobile band */}
+      <AdSlot position="mobile" />
+
       {/* Market pulse */}
       <section className="rounded-xl border border-line bg-ink-850/72 p-5">
         <div className="flex items-center justify-between">
