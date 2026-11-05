@@ -1,6 +1,13 @@
 import Link from 'next/link';
 import site from '../config/site';
-import { timeAgo } from '../lib/posts';
+import { timeAgo, getPostViews, getPostHeat } from '../lib/posts';
+
+/** Compact human views → "6.4K". */
+export function fmtViews(n) {
+  if (n >= 10000) return `${(n / 1000).toFixed(1)}K`;
+  if (n >= 1000) return `${Math.round(n / 100) / 10}K`;
+  return String(n);
+}
 
 export function TagList({ tags, limit = 2 }) {
   const items = (tags || []).filter(Boolean).slice(0, limit);
@@ -52,6 +59,9 @@ export function Sentiment({ value }) {
 }
 
 export default function PostCard({ post, compact = false }) {
+  const views = getPostViews(post);
+  const heat = getPostHeat(post);
+
   return (
     <article className="group flex flex-col rounded-xl border border-line bg-ink-850/72 p-5 shadow-card transition-colors hover:border-ink-600">
       <div className="flex flex-wrap items-center gap-2">
@@ -78,6 +88,33 @@ export default function PostCard({ post, compact = false }) {
         <span className="font-medium text-fg-muted">{post.source}</span>
         <span aria-hidden>·</span>
         <span>{post.readMinutes} min read</span>
+        <span aria-hidden>·</span>
+        <span title="Reads" aria-label={`${views.toLocaleString()} reads`}>
+          {fmtViews(views)} reads
+        </span>
+        {!compact && (
+          <>
+            <span aria-hidden>·</span>
+            <span
+              className="inline-flex items-center gap-1 font-semibold"
+              title="Heat"
+              aria-label={`Heat ${heat}/100`}
+            >
+              <svg
+                viewBox="0 0 24 24"
+                className="h-3.5 w-3.5"
+                fill="none"
+                aria-hidden
+              >
+                <path
+                  d="M12 3C8.5 6 6 8.8 6 12a6 6 0 0 0 12 0c0-3.2-2.5-6-6-9Z"
+                  fill={heat >= 75 ? '#EA3943' : heat >= 45 ? '#F7931A' : '#8B95A9'}
+                />
+              </svg>
+              {heat}
+            </span>
+          </>
+        )}
         {post.externalUrl ? (
           <a
             href={post.externalUrl}

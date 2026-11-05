@@ -57,7 +57,7 @@ export default function HomePage() {
 
           {/* Leaderboard ad above the fold */}
           <div className="mb-5">
-            <AdSlot position="leaderboard" />
+            <AdSlot position="leaderboard" variant="video" />
           </div>
 
           {/* The rest of the feed */}

@@ -29,7 +29,7 @@ const config = {
   ],
   sentimentScale: ['Bullish', 'Cautious', 'Bearish', 'Neutral'],
   /** Increment this when `content/tickers.json` needs a fresh glance. */
-  tickersUpdated: '2026-10-30',
+  tickersUpdated: '2026-11-05',
 };
 
 export default config;

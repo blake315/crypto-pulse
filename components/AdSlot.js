@@ -11,7 +11,7 @@ import { partners } from '../lib/partners';
  *
  * @param {string} position  key of `AdSlots` ("leaderboard" | "rectangle" | "native" | "mobile")
  */
-export default function AdSlot({ position, className = '' }) {
+export default function AdSlot({ position, className = '', variant }) {
   const slot = AdSlots[position];
   if (!slot) return null;
   const items = partners[position] ?? [];
@@ -39,7 +39,10 @@ export default function AdSlot({ position, className = '' }) {
     );
   }
 
-  if (item.image) {
+  const showVideo = variant === 'video' && item.video;
+  const imgSrc = item.image;
+
+  if (imgSrc || showVideo) {
     return (
       <aside id={slot.id} className={className} aria-label={`Sponsored: ${item.name}`}>
         <a
@@ -49,12 +52,24 @@ export default function AdSlot({ position, className = '' }) {
           className="group block overflow-hidden rounded-xl border border-line bg-ink-850 transition-colors hover:border-brand/50"
         >
           <figure className="relative m-0">
-            <img
-              src={item.image}
-              alt={item.alt || `${item.name} advertisement`}
-              className="block h-auto w-full"
-              loading="lazy"
-            />
+            {showVideo ? (
+              <video
+                className="block aspect-[2/1] w-full bg-ink-950 object-cover"
+                src={item.video}
+                muted
+                autoPlay
+                loop
+                playsInline
+                preload="metadata"
+              />
+            ) : (
+              <img
+                src={imgSrc}
+                alt={item.alt || `${item.name} advertisement`}
+                className="block h-auto w-full"
+                loading="lazy"
+              />
+            )}
             <figcaption className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-ink-950/80 px-2.5 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-brand backdrop-blur">
               Sponsored
             </figcaption>
