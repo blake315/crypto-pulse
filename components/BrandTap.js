@@ -9,20 +9,17 @@ const SIGNAL = 10;
 const WINDOW = 2600;
 const TTL = 60 * 60 * 24 * 7;
 
-export default function BrandTap({ onInteract }) {
+export default function BrandTap() {
   const pathname = usePathname();
   const router = useRouter();
   const hits = useRef(0);
   const timer = useRef(null);
 
   function tap(e) {
-    if (pathname !== '/login') {
-      if (onInteract) onInteract();
-      return;
-    }
+    // Anywhere else the logo is just a home link.
+    if (pathname !== '/login') return;
 
     e.preventDefault();
-    if (onInteract) onInteract();
 
     hits.current += 1;
     if (timer.current) window.clearTimeout(timer.current);

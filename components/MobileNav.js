@@ -6,6 +6,10 @@ import site from '../config/site';
 
 export default function MobileNav() {
   const pathname = usePathname();
+
+  // No blog navigation on the sign-in screen — the entry page stays minimal.
+  if (pathname === '/login') return null;
+
   return (
     <nav className="fixed bottom-0 left-0 right-0 z-40 border-t border-line bg-ink-950/95 backdrop-blur lg:hidden">
       <div className="mx-auto flex max-w-7xl items-stretch px-4">
